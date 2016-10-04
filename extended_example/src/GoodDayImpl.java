@@ -1,23 +1,23 @@
-import java.util.Date;
-import org.omg.CORBA.*;
-import chapter49.*;
+ import java.util.Date;
+ import org.omg.CORBA.*;
+ import chapter49.*;
 
-public class GoodDayImpl extends GoodDayPOA {
-    private String location;
+ public class GoodDayImpl extends GoodDayPOA {
+ private String location;
 
-    //constructor
+ //constructor
 
-    GoodDayImpl( String location){
-        this.location = location;
-    }
+ GoodDayImpl( String location){
+ this.location = location;
+ }
 
-    //method
+ //method
 
-    public String hello( ShortHolder hour, ShortHolder minute ){
-        //get local time of the server
-        Date date = new Date();
-        hour.value = (short) date.getHours();
-        minute.value = (short) date.getMinutes();
-        return location;
-    }
-}
+ public String hello( ShortHolder hour, ShortHolder minute ){
+ //get local time of the server
+ Date date = new Date();
+ hour.value = (short) date.getHours();
+ minute.value = (short) date.getMinutes();
+ return location;
+ }
+ }
